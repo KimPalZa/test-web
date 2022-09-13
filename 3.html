@@ -11,11 +11,11 @@
       <li><a href="2.html">스시메이진(화정점)</a></li>
       <li><a href="3.html">SK텔레콤 공식인증대리점</a></li>
     </ol>
-    <h2>이차돌 삼송신원점</h2>
-      업종 : 음식점<br>
-      주소 : 경기도 고양시 덕양구 신원로 12-11 현프라자 1층 (신원동)<br>
-      전화번호 : 02)381-8866<br>
-      군인 혜택 : 차돌박이 외 소고기(수입) / 5% 할인<br>
+    <h2>SK텔레콤 공식인증대리점</h2>
+      업종 : 휴대폰<br>
+      주소 : 경기도 고양시 덕양구 혜음로 66  (고양동)<br>
+      전화번호 : 070)7436-2580<br>
+      군인 혜택 : 휴대폰 및 주변기기 10% 할인<br>
     <div id="map" style="width:500px;height:400px;"></div>
 <!-- services 라이브러리 불러오기 -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16b8e3b354173acf82de125d11fb3356&libraries=services"></script>
@@ -33,7 +33,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
 var geocoder = new kakao.maps.services.Geocoder();
 
 // 주소로 좌표를 검색합니다
-geocoder.addressSearch('경기도 고양시 덕양구 신원로 12-11 현프라자 1층 (신원동)', function(result, status) {
+geocoder.addressSearch('경기도 고양시 덕양구 혜음로 66  (고양동)', function(result, status) {
 
     // 정상적으로 검색이 완료됐으면
      if (status === kakao.maps.services.Status.OK) {
@@ -48,7 +48,7 @@ geocoder.addressSearch('경기도 고양시 덕양구 신원로 12-11 현프라�
 
         // 인포윈도우로 장소에 대한 설명을 표시합니다
         var infowindow = new kakao.maps.InfoWindow({
-            content: '<div style="width:150px;text-align:center;padding:6px 0;">이차돌 삼송신원점</div>'
+            content: '<div style="width:150px;text-align:center;padding:6px 0;">SK텔레콤 공식인증대리점</div>'
         });
         infowindow.open(map, marker);
 
